@@ -93,3 +93,67 @@ setInterval(function ()
 
 // text.length: The length property represents the length of a string. It returns the number of characters units in the string.
 
+
+
+
+
+
+// Display a message when a number is between a range
+
+// Get a random integer from 1 to 10 inclusive
+ // var num = Math.ceil(Math.random() * 10);
+ // var gnum = prompt('Guess the number between 1 and 10 inclusive');
+ // if (gnum == num)
+ //   alert('Matched');
+ //  else
+ //   alert('Not matched, the number was ' + num);
+
+
+
+
+// Calculate multiplication and division of two numbers
+
+function multiplyBy()
+{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = num1 * num2;
+}
+
+function divideBy() 
+{ 
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 / num2;
+}
+
+
+
+
+// Convert temperatures to and from celsius, fahrenheit
+function cToF(celsius) 
+{
+  var cTemp = celsius;
+  var cToFahr = cTemp * 9 / 5 + 32;
+  var message = cTemp+'\xB0C is ' + cToFahr + ' \xB0F.';
+    console.log(message);
+}
+
+function fToC(fahrenheit) 
+{
+  var fTemp = fahrenheit;
+  var fToCel = (fTemp - 32) * 5 / 9;
+  var message = fTemp+'\xB0F is ' + fToCel + '\xB0C.';
+    console.log(message);
+} 
+cToF(60);
+fToC(45);
+
+
+
+
+
+// Get the website URL (loading page)
+
+//Write a JavaScript program to get the website URL (loading page)
+alert(document.URL);

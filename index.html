@@ -10,11 +10,45 @@
 
   </head>
 
- <body onload="animate_string('target')"
-  <pre id="target"> Shazam ! </pre>
+<body>
+
+ <!-- <body onload="animate_string('target')"
+  <pre id="target"> Shazam ! </pre> -->
   	
+<hr>
+
+<form action="/action_page.php">
+First name: <input type="text" name="FirstName" value="Mickey"><br>
+Last name: <input type="text" name="LastName" value="Mouse"><br>
+
+<hr>
+
+<input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the server called "/action_page.php".</p>
+
+<hr>
+
+<form>
+1st Number : <input type="text" id="firstNumber" /><br>
+2nd Number: <input type="text" id="secondNumber" /><br>
+<input type="button" onClick="multiplyBy()" Value="Multiply" />
+<input type="button" onClick="divideBy()" Value="Divide" />
+</form>
+<p>The Result is : <br>
+<span id = "result"></span>
+</p>
 
 
+<hr>
+
+
+<hr>
+
+
+
+<hr>
 
 
 
